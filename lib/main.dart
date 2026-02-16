@@ -10,7 +10,7 @@ class CounterImageToggleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CW1 Counter & Toggle',
+      title: 'Counter App',
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       home: const HomePage(),
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       darkTheme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('CW1 Counter & Toggle'),
+          title: const Text('Counter App'),
           actions: [
             IconButton(
               onPressed: _toggleTheme,
@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               const SizedBox(height: 12),
               ElevatedButton(
                 onPressed: _toggleImage,
-                child: const Text('Toggle Image'),
+                child: const Text('Toggle'),
               ),
             ],
           ),
